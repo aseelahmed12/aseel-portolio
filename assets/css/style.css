@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #1f2020;
+}
+header nav {
+    height: 4.5rem;
+    width: 100%;
+    background-color: #2d2d2d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3.5rem;
+    margin-right: 40px;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 25px;
+}
+header nav ul li a{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 14px;
+}
+header nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.705);
+}
+.logoName{
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 40px;
+    font-weight: bolder;
+}
+header nav ul li a {
+    position: relative; /* ضروري */
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px; /* نزّل الخط بشكل أوضح */
+    width: 100%;
+    height: 1px; /* سمك الخط */
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+/* header section */
+main {
+    padding-top: 4.5rem;
+}
+.My-Portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    height: 41rem;
+    width: 100%;
+}
+.my-Portfolio-Right{
+    width: 50%;
+    height: 100%;
+}
+.my-Portfolio-left{
+    width: 50%;
+    height: 100%;
+    background-image: url(../imgs/solo-woman-traveler.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+}
+.title-one{
+    margin-left: 80px;
+    margin-bottom: 50px;
+
+}
+.title-one h1 , span{
+    font-size: 100px;
+    color: white;
+    font-family: "Chivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+.title-one {
+    letter-spacing: 2px;
+}
+.title-description{
+    margin-left: 80px;
+
+}
+.title-description p {
+    font-family: "Raleway", sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.explore-btn{
+    margin-top: 50px;
+    margin-left: 80px;
+}
+.explore-btn a{
+    text-decoration: none;
+    color: #1f2020;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+} 
+.explore-btn a:hover{
+    background-color: #2d2d2d;
+    color: white;
+}
+/* my Portfolio section */
+.Introduction{
+    margin-top: 5px;
+    display: flex;
+    height: 41rem;
+    width: 100%;
+}
+.introduction-left{
+    width: 55%;
+    height: 100%;
+}
+.introduction-right{
+    width: 45%;
+    height: 100%;
+}
+.introduction-title{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+.introduction-title h2{
+    font-size: 50px;
+    color: white;
+    margin-left: 80px;
+    font-weight: bolder;
+    font-style: normal;
+}
+.intro-underline {
+    display: inline-block;
+    position: relative;
+}
+.intro-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(197, 197, 197);
+}
+.introduction-description{
+    margin-top: 60px;
+}
+.introduction-description p {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-left: 80px;
+    width: 80%;
+}
+.intoduction-shorts{
+    margin-left: 80px;
+    margin-top: 100px;
+    display: flex;
+    gap: 20%;
+
+}
+.about-me h2{
+    color: white;
+}
+.about-me p {
+    width: 270px;
+    color: white;
+    margin-top: 10px;
+}
+.about-portfolio h2{
+    color: white;
+
+}
+.about-portfolio p {
+    color: white;
+    margin-top: 10px;
+    width: 270px;
+
+}
+/* About Me section */
+.About-Me2{
+    margin-top: 30px;
+    height: 41rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.About-Me2-Top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.About-Me2-Bottom{
+    width: 100%;
+    height: 50%;
+}
+.About-Me2-left{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.About-Me2-Bottom{
+    margin-top: 50px;
+    display: flex;
+}
+.About-Me2-Bottom h2{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+    font-style: normal;
+    margin-left: 120px;
+
+}
+.About-Me2-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.About-Me2-right-myVisin{
+    width: 270px;
+}
+.About-Me2-right-Mission{
+    width: 270px;
+}
+.about-me3{
+    margin-bottom: 10px;
+    color: white;
+}
+.about-me3-description{
+    color: white;
+}
+/* Contact Me section */
+.MyContant{
+    margin-top: 50px;
+    height: 41rem;
+    width: 100%;
+    display: flex;
+}
+.ContactLeft{
+    width: 50%;
+    height: 100%;
+}
+.ContactRight{
+    width: 50%;
+    height: 100%;
+}
+.ContactTitle{
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+}
+.ContactContent{
+    margin-top: 70px;
+    font-family: "Raleway", sans-serif;
+}
+.ContactDescriptionP {
+    margin-top: 50px;
+    width: 60%;
+    font-size: 15px;
+    color: white;
+}
+.ContactIcons{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.contactdev{
+    display: flex;
+    gap: 20px;
+
+    cursor: pointer;
+
+}
+.contactdev i{
+    font-size: 25px;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.contactdev i:hover{
+    transform: scale(1.2);
+}
+.contactdev p {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+}
